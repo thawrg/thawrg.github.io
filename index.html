@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <meta name="description" content="A simple site.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Your Name</a>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Personal site</p>
+      <h1>Hello. This page is live on GitHub Pages.</h1>
+      <p class="lede">
+        A quiet place for notes and photos. Replace this text with who you are
+        and what you make.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Blog</h2>
+        <p>Post list will live here. Each entry can include photos.</p>
+        <p class="muted">Coming next</p>
+      </article>
+      <article class="card">
+        <h2>Photos</h2>
+        <p>A gallery that can link back to the post a picture belongs to.</p>
+        <p class="muted">Coming next</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
